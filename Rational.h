@@ -1,4 +1,13 @@
-//Yo what it be do
+// 
+//  Name:		Merritt, Casey 
+//  Project:	5
+//  Due:        11/22
+//  Course:		CS-2560-01-f21 
+// 
+//  Description: 
+//				Rational class member function declarations
+// 
+
 #include <string>
 
 #pragma once
@@ -9,24 +18,10 @@ private:
 	int denominator;
 
 public:
-	Rational() {
-		numerator = 0;
-		denominator = 1;
-	}
-
-	Rational(int x) {
-		numerator = x;
-		denominator = 1;
-	}
-
-	Rational(int p, int q) {
-		numerator = p;
-		denominator = q;
-	}
-
-	~Rational() {
-	
-	}
+	Rational();
+	Rational(int x);
+	Rational(int p, int q);
+	~Rational();
 
 	void set(int);
 	void set(int, int);
@@ -41,6 +36,8 @@ public:
 
 	void operator =(Rational);
 	Rational operator +(Rational);
+	Rational operator +(int);
+	Rational operator *(int);
 	Rational operator -(Rational);
 	bool operator ==(Rational);
 
